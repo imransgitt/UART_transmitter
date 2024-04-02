@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr  2 12:48:48 2024
+# Process ID: 34568
+# Current directory: C:/Mini project Vivado/UART_BASYS3/Transmitter/Transmitter.runs/impl_1
+# Command line: vivado.exe -log UART.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source UART.tcl -notrace
+# Log file: C:/Mini project Vivado/UART_BASYS3/Transmitter/Transmitter.runs/impl_1/UART.vdi
+# Journal file: C:/Mini project Vivado/UART_BASYS3/Transmitter/Transmitter.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source UART.tcl -notrace

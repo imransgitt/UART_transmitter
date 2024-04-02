@@ -1,0 +1,42 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Tue Apr  2 12:51:21 2024
+| Host         : LAPTOP-CCOCB3FQ running 64-bit major release  (build 9200)
+| Command      : report_methodology -file UART_methodology_drc_routed.rpt -pb UART_methodology_drc_routed.pb -rpx UART_methodology_drc_routed.rpx
+| Design       : UART
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 1
++--------+----------+-----------------------------------+------------+
+| Rule   | Severity | Description                       | Violations |
++--------+----------+-----------------------------------+------------+
+| XDCB-2 | Warning  | Clock defined on multiple objects | 1          |
++--------+----------+-----------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+XDCB-2#1 Warning
+Clock defined on multiple objects  
+The clock sys_clk_pin is defined on multiple objects. Although this is logically functional for timing analysis, it cannot exist in hardware. It is recommended to define a primary clock on a single object.
+create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports clk]
+C:/Mini project Vivado/UART_BASYS3/Transmitter/Transmitter.srcs/constrs_1/new/uart_const.xdc (Line: 4)
+Related violations: <none>
+
+
